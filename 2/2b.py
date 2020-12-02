@@ -1,4 +1,4 @@
-data = open("input.txt").read().split("\n")[:-1]
+data = open("input.txt").read().split("\n")
 
 valid_passwords = 0
 for policy_and_password in data:
