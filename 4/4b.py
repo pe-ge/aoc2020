@@ -79,11 +79,11 @@ def validate_items(items):
 
     return True
 
-valid_passwords = 0
+valid_passports = 0
 for passport in passports:
     items = passport.split()
 
     if (len(items) == 8 or (len(items) == 7 and "cid:" not in passport)) and validate_items(items):
-        valid_passwords += 1
+        valid_passports += 1
 
-print(valid_passwords)
+print(valid_passports)
